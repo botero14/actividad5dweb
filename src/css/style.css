@@ -1,0 +1,14 @@
+
+body{
+
+}
+.nombre{
+    color:white;
+    margin: 10px;
+}
+.carousel-inner{
+    width: 100%;
+    max-height: 500px !important;
+    margin: auto;
+    padding: 0;
+}
