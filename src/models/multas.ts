@@ -11,7 +11,7 @@ export class Multa extends Sequelize.Model{
     
 }
 
-export interface UserI{
+export interface MultaI{
     numeroReferencia: number;
     fecha: string;
     hora: string;

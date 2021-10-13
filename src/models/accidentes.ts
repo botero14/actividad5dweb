@@ -10,7 +10,7 @@ export class Accidente extends Sequelize.Model{
     
 }
 
-export interface UserI{
+export interface AccidenteI{
     numeroReferencia: number;
     fecha: string;
     lugar: string;
