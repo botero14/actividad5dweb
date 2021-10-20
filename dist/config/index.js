@@ -35,5 +35,8 @@ export class App {
     }
     routes() {
         this.routesPrev.userRoutes.routes(this.app);
+        this.routesPrev.accidenteRoutes.routes(this.app);
+        this.routesPrev.multaRoutes.routes(this.app);
+        this.routesPrev.vehiculoRoutes.routes(this.app);
     }
 }

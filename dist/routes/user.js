@@ -4,6 +4,6 @@ export class UserRoute {
         this.userController = new UserController();
     }
     routes(app) {
-        app.route('/user').get(this.userController.index);
+        app.route('/user').get(this.userController.getUsers);
     }
 }

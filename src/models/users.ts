@@ -1,6 +1,7 @@
 import {Model,DataTypes} from 'sequelize';
 const Sequelize = require('sequelize')
 import {database} from "../database/db"
+import {Multa} from './multas'
 
 export class User extends Sequelize.Model{
     public nombre!: string;
@@ -53,3 +54,6 @@ User.init(
         timesstamps:true
     }
 );
+
+User.hasMany(Multa);
+Multa.belongsTo(User);

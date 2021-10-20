@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 import { database } from "../database/db";
+import { Multa } from './multas';
 export class User extends Sequelize.Model {
 }
 User.init({
@@ -32,3 +33,5 @@ User.init({
     sequelize: database,
     timesstamps: true
 });
+User.hasMany(Multa);
+Multa.belongsTo(User);
